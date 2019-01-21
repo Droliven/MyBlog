@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>博客部署 | Before 11 pm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="joliven, 小狮子, hiker, Hexo, 博客, blog">
+  
+  
+  
+  
+  <meta name="description" content="想做一个个人博客很久了，决定开始动手。  笔记软件终究不放心。 学了那么久web，想为自己做个东西。 也算是自己的一个小项目，看看自己的自学能力，虽然好像本来也不难。 将来面试也多一项成就。 (这哪里算得上什么成就) 这学期想好好学学java，把后端也了解了解，这样就可以做全栈了。  [TOC]  hexo官网文档官网文档参考资料1参考资料2   hugo框架官网文档参考资料中文文档参考2  Hu">
+<meta name="keywords" content="生活">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客部署">
+<meta property="og:url" content="http://11pm.top/jolivenblog/2019/01/01/Hiker部署/index.html">
+<meta property="og:site_name" content="Before 11 pm">
+<meta property="og:description" content="想做一个个人博客很久了，决定开始动手。  笔记软件终究不放心。 学了那么久web，想为自己做个东西。 也算是自己的一个小项目，看看自己的自学能力，虽然好像本来也不难。 将来面试也多一项成就。 (这哪里算得上什么成就) 这学期想好好学学java，把后端也了解了解，这样就可以做全栈了。  [TOC]  hexo官网文档官网文档参考资料1参考资料2   hugo框架官网文档参考资料中文文档参考2  Hu">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://11pm.top/jolivenblog/2019/01/01/Hiker部署/EFE04AA5F4BF43D2903B45E0F7DFFFBC">
+<meta property="og:image" content="http://11pm.top/jolivenblog/2019/01/01/Hiker部署/5DAB162D048449229F835079C067DB06">
+<meta property="og:updated_time" content="2019-01-18T07:27:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客部署">
+<meta name="twitter:description" content="想做一个个人博客很久了，决定开始动手。  笔记软件终究不放心。 学了那么久web，想为自己做个东西。 也算是自己的一个小项目，看看自己的自学能力，虽然好像本来也不难。 将来面试也多一项成就。 (这哪里算得上什么成就) 这学期想好好学学java，把后端也了解了解，这样就可以做全栈了。  [TOC]  hexo官网文档官网文档参考资料1参考资料2   hugo框架官网文档参考资料中文文档参考2  Hu">
+<meta name="twitter:image" content="http://11pm.top/jolivenblog/2019/01/01/Hiker部署/EFE04AA5F4BF43D2903B45E0F7DFFFBC">
+  
+    <link rel="alternate" href="/atom.xml" title="Before 11 pm" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/jolivenblog/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/jolivenblog/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/jolivenblog/css/style.css">
+
+  <script src="/jolivenblog/js/jquery-3.1.1.min.js"></script>
+  <script src="/jolivenblog/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/jolivenblog/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/jolivenblog/css/dialog.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/jolivenblog/css/header-post.css">
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/jolivenblog/css/vdonate.css">
+  
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 border-width: 0px;  margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                  <img width="124px" height="124px" alt="Hike News" src="/jolivenblog/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/jolivenblog/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/jolivenblog/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/jolivenblog/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/jolivenblog/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/jolivenblog/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/jolivenblog/',
+        CONTENT_URL: '/jolivenblog/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/jolivenblog/js/insight.js"></script>
+
+</div></li>
+            </ul></div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Hiker部署" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      博客部署
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/jolivenblog/2019/01/01/Hiker部署/" class="article-date">
+	  Published <time datetime="2019-01-01T04:00:00.000Z" itemprop="datePublished">2019-01-01</time>
+	</a>
+
+      
+	<a href="/jolivenblog/2019/01/01/Hiker部署/" class="article-date">
+	  Updated <time datetime="2019-01-18T07:27:20.000Z" itemprop="dateUpdated">2019-01-18</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/jolivenblog/categories/技术/">技术</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想做一个个人博客很久了，决定开始动手。</p>
+<ol>
+<li>笔记软件终究不放心。</li>
+<li>学了那么久web，想为自己做个东西。</li>
+<li>也算是自己的一个小项目，看看自己的自学能力，虽然好像本来也不难。</li>
+<li><del>将来面试也多一项成就。</del> (这哪里算得上什么成就)</li>
+<li>这学期想好好学学java，把后端也了解了解，这样就可以做全栈了。</li>
+</ol>
+<p>[TOC]</p>
+<hr>
+<h2 id="hexo官网文档"><a href="#hexo官网文档" class="headerlink" title="hexo官网文档"></a>hexo官网文档</h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官网文档</a><br><a href="https://juejin.im/post/5a6ee00ef265da3e4b770ac1" target="_blank" rel="noopener">参考资料1</a><br><a href="https://blog.csdn.net/LemonXQ/article/details/72676005" target="_blank" rel="noopener">参考资料2</a>  </p>
+<h2 id="hugo框架"><a href="#hugo框架" class="headerlink" title="hugo框架"></a>hugo框架</h2><p><a href="https://gohugo.io/" target="_blank" rel="noopener">官网文档</a><br><a href="https://www.cnblogs.com/BenAndWang/p/9714527.html" target="_blank" rel="noopener">参考资料</a><br><a href="http://www.gohugo.org/doc/" target="_blank" rel="noopener">中文文档</a><br><a href="https://www.jianshu.com/p/475110a1c811" target="_blank" rel="noopener">参考2</a></p>
+<hr>
+<h2 id="Hugo-本地环境搭建步骤"><a href="#Hugo-本地环境搭建步骤" class="headerlink" title="Hugo 本地环境搭建步骤"></a>Hugo 本地环境搭建步骤</h2><ul>
+<li>新建 <code>hugo</code> 文件夹</li>
+<li>下载 <code>Hugo.exe</code> , 放于 <code>Hugo/bin</code> 文件夹，并设置环境变量</li>
+<li>新建 <code>Hugo/Sites</code> ，在里面新建站点：<code>hugo new site JolivenBlog</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-- hugo</span><br><span class="line">    -- bin</span><br><span class="line">        -- hugo.exe</span><br><span class="line">    -- Sites</span><br><span class="line">        -- JolivenBlog</span><br><span class="line">            -- 见图片</span><br></pre></td></tr></table></figure>
+<p><img src="EFE04AA5F4BF43D2903B45E0F7DFFFBC" alt="image"></p>
+<h2 id="Hugo-Hexo-优秀博客模板"><a href="#Hugo-Hexo-优秀博客模板" class="headerlink" title="Hugo Hexo 优秀博客模板"></a>Hugo Hexo 优秀博客模板</h2><ol>
+<li><a href="https://themes.gohugo.io/hugo-theme-cleanwhite/" target="_blank" rel="noopener">Hugo-Hux</a></li>
+<li><a href="https://themes.gohugo.io/allinone/" target="_blank" rel="noopener">Hugo-AllinOne</a></li>
+<li><a href="https://godbmw.com/" target="_blank" rel="noopener">Hexo-BMW</a></li>
+<li><a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="noopener">Hux</a></li>
+<li><a href="https://github.com/Kaijun/hexo-theme-huxblog" target="_blank" rel="noopener">仿Hux-1</a></li>
+<li><a href="http://beantech.org/" target="_blank" rel="noopener">仿Hux-2</a></li>
+<li><a href="https://www.huweihuang.com/" target="_blank" rel="noopener">仿Hux-3</a></li>
+<li><a href="https://lanmiao.oschina.io/" target="_blank" rel="noopener">仿hux-4</a></li>
+<li><a href="https://itimetraveler.github.io/hexo-theme-hiker/about/" target="_blank" rel="noopener">Hexo-itimetraveler大神佳作-Hiker</a></li>
+<li><a href="https://itimetraveler.github.io/hexo-theme-hiero/" target="_blank" rel="noopener">Hexo-itimetraveler大神佳作-hiero</a></li>
+<li><a href="https://itimetraveler.github.io/hexo-theme-hipaper/" target="_blank" rel="noopener">Hexo-itimetraveler大神佳作-hipaper</a></li>
+</ol>
+<h2 id="博客项目搭建与配置"><a href="#博客项目搭建与配置" class="headerlink" title="博客项目搭建与配置"></a>博客项目搭建与配置</h2><ol>
+<li>框架选择更成熟、代码样式更友好的 Hexo</li>
+<li>模板选择 <a href="https://itimetraveler.github.io/hexo-theme-hiker/about/" target="_blank" rel="noopener">Hexo-itimetraveler大神佳作-Hiker</a></li>
+<li>配置搭建</li>
+<li>部署，同步</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 来必力City版安装代码 --&gt;</span><br><span class="line">&lt;div id=&quot;lv-container&quot; data-id=&quot;city&quot; data-uid=&quot;MTAyMC80MjIwOC8xODc1NQ==&quot;&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">   (function(d, s) &#123;</span><br><span class="line">       var j, e = d.getElementsByTagName(s)[0];</span><br><span class="line"></span><br><span class="line">       if (typeof LivereTower === &apos;function&apos;) &#123; return; &#125;</span><br><span class="line"></span><br><span class="line">       j = d.createElement(s);</span><br><span class="line">       j.src = &apos;https://cdn-city.livere.com/js/embed.dist.js&apos;;</span><br><span class="line">       j.async = true;</span><br><span class="line"></span><br><span class="line">       e.parentNode.insertBefore(j, e);</span><br><span class="line">   &#125;)(document, &apos;script&apos;);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;noscript&gt; 为正常使用来必力评论功能请激活JavaScript&lt;/noscript&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!-- City版安装代码已完成 --&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h2><ol>
+<li>初始化博客：<code>hexo init joliven</code></li>
+<li><p>进入博客：<code>cd joliven</code>，克隆模板：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker</span><br><span class="line">cd themes/hiker</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>返回到博客项目根目录，安装依赖：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install -S hexo-generator-json-content</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建博客项目中的目录结构：</p>
+<ul>
+<li><p>scaffolds</p>
+<ul>
+<li><p>draft.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;  </span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>page.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>post.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">updated: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories: </span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>_posts</p>
+</li>
+<li><p>categories</p>
+<ul>
+<li>index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;categories&quot;</span><br><span class="line">title: &quot;Categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>tags</p>
+<ul>
+<li>index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">title: &quot;Tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>about</p>
+<ul>
+<li>index.md  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;about&quot;</span><br><span class="line">title: &quot;About&quot;</span><br><span class="line">---</span><br><span class="line"># 正文</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>修改博客配置文件：<code>_config.yml</code>  </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line">title: &apos;Before 11 pm&apos;</span><br><span class="line">subtitle: subtitle</span><br><span class="line">description: 且行且珍惜</span><br><span class="line">keywords: </span><br><span class="line">author: &apos;Joliven 小狮子&apos;</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://11pm.top/jolivenblog</span><br><span class="line">root: /jolivenblog/</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line"></span><br><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render:</span><br><span class="line"></span><br><span class="line"># Writing</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link: true # Open external links in new tab</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">highlight:</span><br><span class="line">enable: true</span><br><span class="line">line_number: true</span><br><span class="line">auto_detect: false</span><br><span class="line">tab_replace:</span><br><span class="line"></span><br><span class="line"># Home page setting</span><br><span class="line"># path: Root path for your blogs index page. (default = &apos;&apos;)</span><br><span class="line"># per_page: Posts displayed per page. (0 = disable pagination)</span><br><span class="line"># order_by: Posts order. (Order by date descending by default)</span><br><span class="line">index_generator:</span><br><span class="line">path: &apos;&apos;</span><br><span class="line">per_page: 10</span><br><span class="line">order_by: -updated</span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">tag_map:</span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format as defined in</span><br><span class="line">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="line">date_format: YYYY-MM-DD</span><br><span class="line">time_format: HH:mm:ss</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10</span><br><span class="line">pagination_dir: page</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: hiker</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/Joliven/MyBlog</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改模板配置：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br></pre></td><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Site Information Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Header Menu</span><br><span class="line">menu:</span><br><span class="line">Home: /</span><br><span class="line">Archives: archives</span><br><span class="line">Categories: categories</span><br><span class="line">Tags: tags</span><br><span class="line">About: about</span><br><span class="line">rss: /atom.xml</span><br><span class="line"></span><br><span class="line">since: 2013</span><br><span class="line"></span><br><span class="line"># Set default keywords (Use a comma to separate)</span><br><span class="line">keywords: &quot;joliven, 小狮子, hiker, Hexo, 博客, blog&quot;</span><br><span class="line"></span><br><span class="line"># Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.</span><br><span class="line">avatar: </span><br><span class="line">enable: true</span><br><span class="line">border: false</span><br><span class="line">width: 124</span><br><span class="line">height: 124</span><br><span class="line">top: 0</span><br><span class="line">url: css/images/mylogo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Homepage</span><br><span class="line"># eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]</span><br><span class="line"># eg. mode: image | polyline | trianglify</span><br><span class="line">home_background_image:</span><br><span class="line">enable: true</span><br><span class="line">mode: image</span><br><span class="line"># mode: polyline</span><br><span class="line">rolling: true</span><br><span class="line">url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">home_logo_image:</span><br><span class="line">enable: false</span><br><span class="line">border: false</span><br><span class="line">url: css/images/homelogo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># AboutPage background</span><br><span class="line">about_big_image: [css/images/pose.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Archive pagination</span><br><span class="line">archive_pagination: true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Post Article&apos;s Content</span><br><span class="line">post_catalog:</span><br><span class="line">enable: true</span><br><span class="line"># 开启主页摘要</span><br><span class="line">post_excerpt: true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Content</span><br><span class="line">fancybox: true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Sidebar</span><br><span class="line">sidebar: right</span><br><span class="line">widgets:</span><br><span class="line">- social</span><br><span class="line">- category</span><br><span class="line">- tag</span><br><span class="line">- tagcloud</span><br><span class="line">- archive</span><br><span class="line">- recent_posts</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Social Links</span><br><span class="line"># Key is the name of FontAwsome icon.</span><br><span class="line"># Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)</span><br><span class="line">social:</span><br><span class="line">Github: https://github.com/Joliven</span><br><span class="line">email: joliven_d@qq.com</span><br><span class="line"># Weibo: http://www.yoursite.com</span><br><span class="line"># Twitter: </span><br><span class="line"># Facebook: </span><br><span class="line"># Google-plus: </span><br><span class="line"># Instagram: </span><br><span class="line"># Pinterest: </span><br><span class="line"># Flickr: </span><br><span class="line"></span><br><span class="line"># Search</span><br><span class="line">search:</span><br><span class="line">    insight: true # you need to install `hexo-generator-json-content` before using Insight Search</span><br><span class="line">    swiftype: # enter swiftype install key here</span><br><span class="line">    baidu: false # you need to disable other search engines to use Baidu search, options: true, false</span><br><span class="line"></span><br><span class="line"># comment ShortName, you can choose only ONE to display.</span><br><span class="line">gentie_productKey: #your-gentie-product-key</span><br><span class="line">duoshuo_shortname: </span><br><span class="line">disqus_shortname: </span><br><span class="line">livere_shortname: MTAyMC80MjIwOC8xODc1NQ==</span><br><span class="line">uyan_uid: </span><br><span class="line">wumii: </span><br><span class="line"></span><br><span class="line"># Code Highlight theme</span><br><span class="line"># Available value:</span><br><span class="line">#    default | gray | normal | night | night eighties | night blue | night bright</span><br><span class="line"># https://github.com/chriskempson/tomorrow-theme</span><br><span class="line">highlight_theme: default</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Article theme color</span><br><span class="line"># Available value:</span><br><span class="line">#    random | orange | blue | red | green | black</span><br><span class="line">theme_color: random</span><br><span class="line"></span><br><span class="line"># display widgets at the bottom of index pages (pagination == 2)</span><br><span class="line">index_widgets:</span><br><span class="line"># - category</span><br><span class="line"># - tagcloud</span><br><span class="line"># - archive</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># widget behavior</span><br><span class="line">archive_type: &apos;monthly&apos;</span><br><span class="line">show_count: true</span><br><span class="line"></span><br><span class="line"># Google Webmaster tools verification setting</span><br><span class="line"># See: https://www.google.com/webmasters/</span><br><span class="line">google_site_verification:</span><br><span class="line">baidu_site_verification:</span><br><span class="line"># qihu_site_verification:</span><br><span class="line"></span><br><span class="line"># Miscellaneous</span><br><span class="line">google_analytics:</span><br><span class="line">gauges_analytics:</span><br><span class="line">baidu_analytics:</span><br><span class="line">tencent_analytics:</span><br><span class="line">twitter:</span><br><span class="line">google_plus:</span><br><span class="line">fb_admins:</span><br><span class="line">fb_app_id:</span><br><span class="line"></span><br><span class="line"># Facebook SDK Support.</span><br><span class="line"># https://github.com/iissnan/hexo-theme-next/pull/410</span><br><span class="line">facebook_sdk:</span><br><span class="line">enable: false</span><br><span class="line">app_id:       #&lt;app_id&gt;</span><br><span class="line">fb_admin:     #&lt;user_id&gt;</span><br><span class="line">like_button:  #true</span><br><span class="line">webmaster:    #true</span><br><span class="line"></span><br><span class="line"># CNZZ count</span><br><span class="line">cnzz_siteid: 1260716016</span><br><span class="line"></span><br><span class="line"># busuanzi count</span><br><span class="line"># http://busuanzi.ibruce.info/</span><br><span class="line">show_busuanzi_view_counts: true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># donation button</span><br><span class="line">donate:</span><br><span class="line">    enable: true</span><br><span class="line">    message: &apos;如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!&apos;</span><br><span class="line">    wechatImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png</span><br><span class="line">    alipayImage: https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg</span><br><span class="line">    </span><br><span class="line"># post copyright</span><br><span class="line">copyright:</span><br><span class="line">    enable: true</span><br><span class="line"></span><br><span class="line"># post edit url, modify your post online for convenience</span><br><span class="line"># If you put your blog on GitHub, it should look like:</span><br><span class="line"># https://github.com/username/blog/edit/master/source/_posts/</span><br><span class="line"># post_edit_url: https://github.com/Joliven/blog/edit/master/source/_posts/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改页面模板</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Hiker部署&quot;</span><br><span class="line">date: 2014-01-29 12:00:00</span><br><span class="line">updated: 2019-01-18 15:27:20</span><br><span class="line">categories: </span><br><span class="line">    - 技术</span><br><span class="line">header-img: &quot;&quot;</span><br><span class="line">tags:</span><br><span class="line">    - 生活</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">+ [link](name)</span><br><span class="line">+ [link](name)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建文章：<code>hexo new post xxx</code></p>
+</li>
+<li>本地试运行：<code>hexo s</code></li>
+<li>打包生成可部署文件夹 <code>public</code>：<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+<li>推送到 <code>git</code> 仓库：<code>hexo deploy</code></li>
+<li>云主机拉取 <code>git</code> 仓库文件：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -rf jolivenblog</span><br><span class="line">git clone https://github.com/Joliven/MyBlog jolivenblog</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h2 id="Hiker-模板进阶操作探索"><a href="#Hiker-模板进阶操作探索" class="headerlink" title="Hiker 模板进阶操作探索"></a>Hiker 模板进阶操作探索</h2><ol>
+<li><p>Home 页面文章缩略区的大图、文章 tags 、预览区截断<br> <img src="5DAB162D048449229F835079C067DB06" alt="image"></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Home 文章加入按修改日期 <code>updated</code> 排序</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/jolivenblog/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>Post author:  </strong>Joliven 小狮子
+          </li>
+          <li class="post-copyright-link">
+          <strong>Post link:  </strong>
+          <a href="/jolivenblog/2019/01/01/Hiker部署/" target="_blank" title="博客部署">http://11pm.top/jolivenblog/2019/01/01/Hiker部署/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>Copyright Notice:   </strong>
+            All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            unless stating additionally.
+          </li>
+         
+        </ul>
+<div>
+</div></div>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC80MjIwOC8xODc1NQ==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo官网文档"><span class="nav-number">1.</span> <span class="nav-text">hexo官网文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hugo框架"><span class="nav-number">2.</span> <span class="nav-text">hugo框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hugo-本地环境搭建步骤"><span class="nav-number">3.</span> <span class="nav-text">Hugo 本地环境搭建步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hugo-Hexo-优秀博客模板"><span class="nav-number">4.</span> <span class="nav-text">Hugo Hexo 优秀博客模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客项目搭建与配置"><span class="nav-number">5.</span> <span class="nav-text">博客项目搭建与配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置过程"><span class="nav-number">6.</span> <span class="nav-text">配置过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hiker-模板进阶操作探索"><span class="nav-number">7.</span> <span class="nav-text">Hiker 模板进阶操作探索</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Before 11 pm All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/jolivenblog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/jolivenblog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/jolivenblog/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/jolivenblog/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/jolivenblog/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/jolivenblog/fancybox/jquery.fancybox.css">
+  <script src="/jolivenblog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/jolivenblog/js/scripts.js"></script>
+
+
+
+
+  <script src="/jolivenblog/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Before 11 pm
+          </div>
+          <div class="panel-body">
+            Copyright © 2019 Joliven 小狮子 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
